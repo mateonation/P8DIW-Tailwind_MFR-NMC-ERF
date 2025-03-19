@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nintendo Switch - Registro</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body class="bg-black text-[#00c0e0] min-h-screen flex flex-col">
+
+ 
+  <header class="w-full bg-[#222222]">
+    <div class="max-w-screen-xl mx-auto px-4 py-4 flex flex-col md:flex-row items-center justify-between">
+      <div class="flex-shrink-0 mb-2 md:mb-0">
+        <img src="../img/Logo_switch.png" alt="Nintendo Switch Logo" class="h-10 w-auto"/>
+      </div>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="../html/Index.html" class="hover:underline">INICIO</a></li>
+          <li><a href="../html/software-mateo.html" class="hover:underline">SOFTWARE</a></li>
+          <li><a href="../html/AboutUs.html" class="hover:underline">ABOUT US</a></li>
+          <li><a href="https://www.nintendo.com/es-es/Hardware/Familia-Nintendo-Switch/Nintendo-Switch/Nintendo-Switch-1148779.html?srsltid=AfmBOorhQGFuixM8rkxewcZFd0k5JL1lbE91BxAhR-3kP1SFD5kCNCzU" class="hover:underline">COMPRA AQUÍ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <main class="w-full flex-grow grid grid-cols-1 md:grid-cols-2">
+
+
+    <section 
+      aria-labelledby="about-heading" 
+      class="relative flex items-center justify-center h-screen md:h-[calc(100vh-96px)] w-full"
+    >
+      <div class="absolute top-0 left-0 w-full h-full bg-cover bg-center" style="background-image: url('../img/Azul.jpg');"></div>
+      <div class="relative bg-black p-8 rounded-lg z-10 w-full sm:w-[60%] md:w-[40%] flex flex-col items-center text-center text-white">
+        <h2 id="about-heading" class="text-2xl font-bold mb-4">ABOUT US</h2>
+        <p class="mb-4">
+          Información de la empresa
+          Servicio de Atención al Consumidor
+        </p>
+        <p class="mb-4">
+          Responsabilidad y gestión de la Web
+          Este sitio web está gestionado por
+          Nintendo of Europe SE
+          Goldsteinstrasse 235
+          D-60528 Frankfurt am Main
+          Germany
+        </p>
+        <p class="mb-4">
+          Domicilio social de la sociedad matriz: Frankfurt am Main
+          eMail: contact@nintendo.es
+        </p>
+      </div>
+    </section>
+
+
+    <section 
+      aria-labelledby="registration-heading" 
+      class="relative flex items-center justify-center h-screen md:h-[calc(100vh-96px)] w-full"
+    >
+      <div class="absolute top-0 left-0 w-full h-full bg-cover bg-center" style="background-image: url('../img/Rojo.png');"></div>
+      <div class="relative bg-black p-6 rounded-lg z-10 w-full sm:w-[80%] md:w-[60%] max-w-2xl">
+        <h2 id="registration-heading" class="text-2xl font-bold mb-6">REGISTRO</h2>
+        <form class="space-y-4">
+          <div>
+            <label for="email1" class="block mb-1 font-medium text-white">Correo Electrónico</label>
+            <input type="email" id="email1" name="email1" required class="w-full border border-[#00c0e0] bg-black text-white p-2 rounded"/>
+          </div>
+          <div>
+            <label for="password" class="block mb-1 font-medium text-white">Contraseña</label>
+            <input type="password" id="password" name="password" required class="w-full border border-[#00c0e0] bg-black text-white p-2 rounded"/>
+          </div>
+          <div>
+            <label for="age" class="block mb-1 font-medium text-white">Edad</label>
+            <input type="number" id="age" name="age" required class="w-full border border-[#00c0e0] bg-black text-white p-2 rounded"/>
+          </div>
+          <div>
+            <label for="address" class="block mb-1 font-medium text-white">Dirección</label>
+            <input type="text" id="address" name="address" required class="w-full border border-[#00c0e0] bg-black text-white p-2 rounded"/>
+          </div>
+          <button type="submit" class="bg-[#00c0e0] text-black font-semibold px-4 py-2 rounded hover:bg-[#00a0c0]">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-[#222222] py-6 px-20 text-white flex justify-between items-center">
+
+    <p class="text-lg">Elena Rodríguez - Mateo Fernández - Nicolás Manteiga</p>
+
+
+    <div class="space-x-4 text-lg">
+        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-youtube"></i></a>
+    </div>
+</footer>
+
+</body>
+</html>

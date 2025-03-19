@@ -1,0 +1,14 @@
+.software{
+    background:#333333;
+    .games-section{
+        background:#333333;
+    }
+}
+
+    .stroke-text {
+        text-shadow:
+            -2px -2px 0 #333333,
+            2px -2px 0 #333333,
+            -2px 2px 0 #333333,
+            2px 2px 0 #333333;
+    }
